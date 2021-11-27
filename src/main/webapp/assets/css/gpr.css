@@ -41,6 +41,7 @@
     margin: auto;
     border: gray 1px solid;
     height: auto;
+    
 }
 
 .button {
@@ -52,6 +53,7 @@
     margin: 4px 4px;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .button_black {
@@ -77,6 +79,7 @@
 .avatar {
     margin-right: 10px;
     border: black 1px solid;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .filtros {
@@ -86,9 +89,11 @@
 .tcentrado {
     
     
-    background-color: rgba(179, 179, 179, 50%);
+    background-color: rgba(179, 179, 179, 40%);
     border: 1px solid silver;
     display: table-cell;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
     
 }
 
@@ -107,6 +112,7 @@
 .ri-pencil-line,
 .ri-eye-line {
     text-decoration: none;
+    padding: 5px 5px 5px 5px ;
 }
 
 .lincol {
@@ -141,6 +147,7 @@
     font-size: 17px;
     border: 2px solid black;
     margin: 4px 4px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -157,6 +164,7 @@
 .topnav a.exportar {
     background-color: #555555;
     color: white;
+    border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -170,6 +178,7 @@
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .topnav input[type=text] {
@@ -184,7 +193,9 @@
 
 .hscroll {
     overflow-x: auto;
+    overflow-y: auto;
     /* Horizontal */
+    /* Vertical */
 }
 
 
@@ -449,6 +460,9 @@ h1 {
         
     
 }
+
+
+/* login */
 
 
 
