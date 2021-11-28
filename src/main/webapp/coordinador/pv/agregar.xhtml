@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:html5="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
     <ui:composition>
@@ -26,12 +27,15 @@
 
 
                 <div class="col-md-6">
-                    <h:outputLabel for="validationServer02">Tipo</h:outputLabel>
-                    <h:selectOneMenu class="form-control" id="validationServer02" placeholder="Seleccione el género" >
-                        <f:selectItem  itemValue="pcescritorio" itemLabel="pcescritorio"/>
-                        <f:selectItem  itemValue="Portatil" itemLabel="Portatil"/>
-                        <f:selectItem  itemValue="Todoenuno" itemLabel="Todoenuno"/>
+                    
+                    <h:outputLabel for="new_tipo">Tipo</h:outputLabel>
+                    <h:selectOneMenu value="#{usuarioSession.usureg.usuTipodocumento}" class="form-control form-control-lg" id="new_tipo">
+                        <f:selectItem itemLabel="pcescritorio" itemValue="pcescritorio"></f:selectItem>
+                        <f:selectItem itemLabel="Portatil" itemValue="Portatil"></f:selectItem>
+                        <f:selectItem itemLabel="Todoenuno" itemValue="Todoenuno"></f:selectItem>
                     </h:selectOneMenu>
+                    
+                   
 
 
                     <h:outputLabel for="validationServer03">Marca</h:outputLabel>
@@ -59,7 +63,10 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h:outputLabel for="validationServer05">Modelo</h:outputLabel>
+
+
+                    
+                    <h:outputLabel for="c">Modelo</h:outputLabel>
                     <h:inputText class="form-control" id="validationServer05" placeholder="Agregue el Modelo" />
                     <div class="valid-feedback ">
                         Dato correcto.
@@ -191,9 +198,9 @@
                         <f:selectItem itemValue="Disponible" itemLabel="Disponible"></f:selectItem>
                     </h:selectOneMenu>
                     <div>
-                    <h:outputLabel for="validationServer17">Comentarios</h:outputLabel>
-                    <textarea type="text" class="form-control" id="validationServer17" rows="3" placeholder="Indique observaciones del equipo a registrar"></textarea>
-                    
+                        <h:outputLabel for="validationServer17">Comentarios</h:outputLabel>
+                        <textarea type="text" class="form-control" id="validationServer17" rows="3" placeholder="Indique observaciones del equipo a registrar"></textarea>
+
                     </div>
 
                 </div>
@@ -202,10 +209,10 @@
                     <h:inputText  class="form-control" id="validationServer01" placeholder="Ingrese la fecha" />
 
 
-                    
+
                 </div>
                 <div class="col-md-6">
-                    
+
                 </div>
 
                 <div>
