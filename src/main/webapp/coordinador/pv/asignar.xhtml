@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <ui:composition>
+        <div class="formprincipal">
+
+            <div class="tituloinv">
+                <h6>Asignar Inventario </h6>
+            </div>
+
+            <div class="tituloinv">
+                <h6>Detalles de asignación</h6>
+            </div>
+            <br></br>
+            <br></br>
+
+
+            <div class="formprincipal" align="center">
+
+                <h:form class="row g-3 needs-validation">
+                    <div class="col-md-12">
+                        <outputLabel for="validationServer01">Inventario a Entregar</outputLabel>
+                        <h:selectOneMenu class="form-control" id="validationServer01" placeholder="Seleccione la marca" >
+                            <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                            <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                            <f:selectItem itemValue="..." itemLabel="..." ></f:selectItem>
+                            <f:selectItem itemValue="..." itemLabel="..." ></f:selectItem>
+                            <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                            <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                        </h:selectOneMenu>
+
+
+                        <div class="valid-feedback ">
+                            Dato correcto.
+                        </div>
+                        <div class="invalid-feedback ">
+                            Seleccione de la lista.
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+
+
+                        </div>
+                        <div class="col-md-12">
+                            <outputLabel for="validationServer02">Cédula</outputLabel>
+                            <h:selectOneMenu type="text" class="form-control" id="validationServer02" placeholder="Seleccione la marca" >
+                                <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                                <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                                <f:selectItem itemValue="..." itemLabel="..." ></f:selectItem>
+                                <f:selectItem itemValue="..." itemLabel="..." ></f:selectItem>
+                                <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                                <f:selectItem itemValue="..." itemLabel="..."></f:selectItem>
+                            </h:selectOneMenu>
+
+
+                            <div class="valid-feedback ">
+                                Dato correcto.
+                            </div>
+                            <div class="invalid-feedback ">
+                                Seleccione de la lista.
+                                <br></br>
+                                <br></br>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="#{request.contextPath}/modulos/inventarios/guardarinventario.xhtml">Guardar</a>
+                        <a class="btn btn-light"  href="#{request.contextPath}/modulos/inventarios/inventario.xhtml">Cancelar</a>
+                    </div>
+                </h:form>
+
+                <br></br>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </ui:composition>
+
+
+</html>
