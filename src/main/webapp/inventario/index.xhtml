@@ -4,7 +4,17 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <ui:composition template="../WEB-INF/template/tema.xhtml">
-        
+        <ui:define name="areanotificaciones">
+            <ui:include src="../inventario/pv/areanotificaciones.xhtml"></ui:include>            
+        </ui:define>
+
+        <ui:define name="menuvertical">
+            <ui:include src="../inventario/pv/menuvertical.xhtml"></ui:include>            
+        </ui:define>
+
+        <ui:define name="areatrabajo">
+            <ui:include src="../inventario/pv/areatrabajo.xhtml"></ui:include>            
+        </ui:define>
     </ui:composition>
 </html>
 

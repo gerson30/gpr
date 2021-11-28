@@ -41,7 +41,7 @@
     margin: auto;
     border: gray 1px solid;
     height: auto;
-    
+
 }
 
 .button {
@@ -87,14 +87,14 @@
 }
 
 .tcentrado {
-    
-    
+
+
     background-color: rgba(179, 179, 179, 40%);
     border: 1px solid silver;
     display: table-cell;
     border-radius: 5px 5px 5px 5px;
     text-align: center;
-    
+
 }
 
 .encabezadocol {
@@ -111,8 +111,8 @@
 .ri-delete-bin-6-line,
 .ri-pencil-line,
 .ri-eye-line {
-    text-decoration: none;
-    padding: 5px 5px 5px 5px ;
+    
+   
 }
 
 .lincol {
@@ -191,9 +191,10 @@
 
 /* Esta clase de contenedor permitirá que una tabla se desplace horizontalmente en pantallas más pequeñas. */
 
+    
 .hscroll {
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow: scroll;
+    
     /* Horizontal */
     /* Vertical */
 }
@@ -448,7 +449,7 @@ h1 {
     margin-right: 30px;
     align-items: center;
     justify-content: center;
-  
+
 }
 .areatra{
     border: 1px solid black;
@@ -457,12 +458,9 @@ h1 {
     cellpading: 8;
     margin-top: 30px;
     align-items: center;
-        
-    
+
+
 }
-
-
-/* login */
 
 
 
