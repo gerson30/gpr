@@ -7,22 +7,23 @@
     <ui:composition>
         <nav>
             <div class="fila">
-                <div class="nav">
+                <div>
                     <img class="logo" src="#{request.contextPath}/assets/image/logotipo_peq.png" alt="logo"/>
                 </div>
-                <div class="nav">
+                <div class="">
                     
-                    <a class="button button_black" href="#{request.contextPath}//gestion/index.xhtml">Incidentes</a>
-                    <a class="button button_black" href="#{request.contextPath}//colaboradores/index.xhtml">Colaboradores</a>
-                    <a class="button button_black button_selected" href="#{request.contextPath}//coordinador/index.xhtml">Inventario</a>
-                    <a class="button button_black" href="#{request.contextPath}//registro/registro.xhtml">Salir</a>
+                    <a class="button button_black" href="#{request.contextPath}/gestion/index.xhtml">Incidentes</a>
+                    <a class="button button_black button_selected" href="indexcol.xhtml">Colaboradores</a>
+                    <a class="button button_black" href="#{request.contextPath}/coordinador/indexinv.xhtml">Inventario</a>
+                    <a class="button button_black" href="#{request.contextPath}/registro/registro.xhtml">Salir</a>
                 </div>
-                <div class="nav" style="max-width: 180px;">
+                <div class="colu" style="max-width: 160px;">
                     <div class="avatar">
                         <img class="imguser" src="#{request.contextPath}/assets/image/Logo_user.png" alt="imguser"/>
                     </div>
-                    <div style="max-width: 80px;">Coordinador</div>
+                    <div style="max-width: 80px;">Administrativo</div>
                 </div>
+
             </div>
         </nav>
     </ui:composition>

@@ -258,7 +258,15 @@
                         id="new_est">
                         <f:selectItem itemLabel="Asignado" itemValue="Asignado"></f:selectItem>
                         <f:selectItem itemLabel="Disponible" itemValue="Disponible"></f:selectItem>
+                        <f:selectItem itemLabel="Disponible" itemValue="Inactivo"></f:selectItem>
                     </h:selectOneMenu>
+                     <h:outputLabel for="new_asi">Asignado A </h:outputLabel>
+                    <h:inputText
+                        required="true"
+                        requiredMessage="Se requiere un valor"
+                        class="form-control" 
+                        id="new_ser" />
+                    <h:message style="color: red" for="new_asi"></h:message> 
 
                 </div>
 
@@ -283,6 +291,12 @@
 
 
                 </div>
+                <div>
+                    <div class="button">
+                        <h:commandButton  class="btn btn-primary" value="Guardar" html5:type="submit"> </h:commandButton>
+                        <h:commandButton  class="btn btn-light" value="Cancelar"> </h:commandButton>
+                    </div>
+                </div>
             </h:form>
 
 
@@ -290,15 +304,10 @@
             <div class="col-md-6">
 
             </div>
-            <h:form>
-                <div>
-                    <div class="button">
-                        <h:commandButton  class="btn btn-primary" value="Guardar" html5:type="submit"> </h:commandButton>
-                        <h:commandButton  class="btn btn-primary" value="Cancelar"> </h:commandButton>
-                    </div>
-                </div>
 
-            </h:form>
+
+
+
         </div>
     </ui:composition>
 
