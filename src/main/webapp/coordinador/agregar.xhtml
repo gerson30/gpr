@@ -5,16 +5,19 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
-  <ui:composition template="../WEB-INF/template/tema.xhtml">
-      <ui:define name="areanotificaciones">
-            <ui:include src="pv/areanotificaciones.xhtml"></ui:include>            
-        </ui:define>
-      
+     <ui:composition template="../WEB-INF/template/tema.xhtml">
+        
         <ui:define name="areatrabajo">
-            <ui:include src="pv/agregar.xhtml"></ui:include>            
+            <ui:include src="../coordinador/pv/agregar.xhtml"></ui:include>            
         </ui:define>
-
-       
+         
+         <ui:define name="menuvertical" >
+             <ui:include src="../coordinador/pv/quitarmenu.xhtml"></ui:include>
+         </ui:define>
+         
+         
+         
+        
     </ui:composition>
 
 
