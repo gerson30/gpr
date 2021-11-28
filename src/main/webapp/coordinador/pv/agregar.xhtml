@@ -27,15 +27,15 @@
 
 
                 <div class="col-md-6">
-                    
+
                     <h:outputLabel for="new_tipo">Tipo</h:outputLabel>
-                    <h:selectOneMenu value="#{usuarioSession.usureg.usuTipodocumento}" class="form-control form-control-lg" id="new_tipo">
+                    <h:selectOneMenu value="" class="form-control form-control-lg" id="new_tipo">
                         <f:selectItem itemLabel="pcescritorio" itemValue="pcescritorio"></f:selectItem>
                         <f:selectItem itemLabel="Portatil" itemValue="Portatil"></f:selectItem>
                         <f:selectItem itemLabel="Todoenuno" itemValue="Todoenuno"></f:selectItem>
                     </h:selectOneMenu>
-                    
-                   
+
+
 
 
                     <h:outputLabel for="validationServer03">Marca</h:outputLabel>
@@ -58,25 +58,32 @@
 
 
                     <h:outputLabel for="validationServer01">Fecha Ingreso</h:outputLabel>
+
                     <h:inputText  class="form-control" id="validationServer01" placeholder="Ingrese la fecha" />
 
+
+                    <h:outputLabel for="validationServer01">Fecha Ingreso</h:outputLabel>
+                    <h:inputText 
+                        required="true"
+                        requiredMessage="Ingrese la fecha"
+                        value=""
+                        class="form-control"
+                        id="in_nom"  
+                        html5:type="date">
+                    </h:inputText>
+                    <h:message style="color: red" for="in_nom"></h:message>
                 </div>
 
                 <div class="col-md-6">
 
 
-                    
+
                     <h:outputLabel for="c">Modelo</h:outputLabel>
                     <h:inputText class="form-control" id="validationServer05" placeholder="Agregue el Modelo" />
-                    <div class="valid-feedback ">
-                        Dato correcto.
-                    </div>
-                    <div class="invalid-feedback ">
-                        Corregir dato.
-                    </div>
+
 
                     <h:outputLabel for="validationServer06">Proveedor</h:outputLabel>
-                    <h:selectOneMenu type="text" class="form-control is-valid" id="validationServer06" placeholder="Elija el área" >
+                    <h:selectOneMenu type="text" class="form-control" id="validationServer06" placeholder="Elija el área" >
                         <f:selectItem itemValue="VisionX" itemLabel="VisionX"></f:selectItem>
                         <f:selectItem itemValue="Jhan Carlo Jaramillo" itemLabel="Jhan Carlo Jaramillo"></f:selectItem>
                     </h:selectOneMenu>
@@ -128,18 +135,30 @@
 
                 <div class="col-md-6">
                     <div>
-                        <h:outputLabel for="validationServer10">Sistema Operativo</h:outputLabel>
-                        <h:selectOneMenu  class="form-control" id="validationServer10" placeholder="Seleccione la marca" >
+
+
+                        <h:outputLabel for="new_sis">Sistema Operativo</h:outputLabel>
+                        <h:selectOneMenu 
+                            value="" 
+                            class="form-control" 
+                            id="new_sis">
                             <f:selectItem itemValue="W8" itemLabel="W8"></f:selectItem>
                             <f:selectItem itemValue="W10" itemLabel="W10"> </f:selectItem>
                         </h:selectOneMenu>
 
-                        <h:outputLabel for="validationServer12">Procesador</h:outputLabel>
-                        <h:selectOneMenu class="form-control" id="validationServer12" placeholder="Seleccione la marca" >
+
+
+
+                        <h:outputLabel for="new_pro">Procesador</h:outputLabel>
+                        <h:selectOneMenu 
+                            value="" 
+                            class="form-control" 
+                            id="new_pro">
                             <f:selectItem itemValue="Core I3" itemLabel="Core I3"></f:selectItem>
                             <f:selectItem itemValue="Core I5" itemLabel="Core I5"></f:selectItem>
                             <f:selectItem itemValue="Core I7" itemLabel="Core I7"></f:selectItem>
                         </h:selectOneMenu>
+
 
                     </div>
 
@@ -147,16 +166,26 @@
 
                 </div>
                 <div class="col-md-6">
-                    <h:outputLabel for="validationServe11">Microsoft Office</h:outputLabel>
-                    <h:selectOneMenu class="form-control" id="validationServer11" placeholder="Seleccione la marca" >
+
+
+                    <h:outputLabel for="new_off">Microsoft Office</h:outputLabel>
+                    <h:selectOneMenu 
+                        value="" 
+                        class="form-control" 
+                        id="new_off">
                         <f:selectItem itemValue="2010" itemLabel="2010"></f:selectItem>
                         <f:selectItem itemValue="2013" itemLabel="2013"></f:selectItem>
                         <f:selectItem itemValue="2016" itemLabel="2016"></f:selectItem>
                         <f:selectItem itemValue="2017" itemLabel="2017"></f:selectItem>
                     </h:selectOneMenu>
 
-                    <h:outputLabel for="validationServer13">Memoria RAM</h:outputLabel>
-                    <h:selectOneMenu type="text" class="form-control" id="validationServer13" placeholder="Seleccione la marca" >
+
+
+                    <h:outputLabel for="new_ram">Memoria Ram</h:outputLabel>
+                    <h:selectOneMenu 
+                        value="" 
+                        class="form-control" 
+                        id="new_ram">
                         <f:selectItem itemValue="4 GB" itemLabel="4 GB"></f:selectItem>
                         <f:selectItem itemValue="8 GB" itemLabel="8 GB"></f:selectItem>
                         <f:selectItem itemValue="12 GB" itemLabel="12 GB"></f:selectItem>
@@ -168,11 +197,18 @@
 
 
                 <div class="col-md-6">
-                    <h:outputLabel for="validationServer14"> Capacidad Disco Duro</h:outputLabel>
-                    <h:selectOneMenu type="text" class="form-control" id="validationServer14" placeholder="Seleccione la marca" >
-                        <f:selectItem itemValue="500" itemLabel="500"></f:selectItem>
-                        <f:selectItem itemValue="1 TB" itemLabel="1 TB"></f:selectItem>
+
+
+                    <h:outputLabel for="new_cap">Capacidad Disco Duro</h:outputLabel>
+                    <h:selectOneMenu 
+                        value="" 
+                        class="form-control" 
+                        id="new_cap">
+                        <f:selectItem itemLabel="500" itemValue="500"> </f:selectItem>
+                        <f:selectItem itemLabel="1 TB" itemValue="1 TB"> </f:selectItem>
                     </h:selectOneMenu>
+
+
                 </div>
 
 
@@ -182,42 +218,61 @@
 
 
             <br></br>
+            <br></br>
 
             <div class="tituloinv">
                 <h6>Detalles</h6>
             </div>
+            <br></br>
             <br></br>
 
 
             <h:form class="row g-3 needs-validation" >
 
                 <div class="col-md-6">
-                    <h:outputLabel for="validationServer15">Estado</h:outputLabel>
-                    <h:selectOneMenu type="text" class="form-control" id="validationServer15" placeholder="Seleccione la marca">
-                        <f:selectItem itemValue="Asignado" itemLabel="Asignado"></f:selectItem>
-                        <f:selectItem itemValue="Disponible" itemLabel="Disponible"></f:selectItem>
+
+                    <h:outputLabel for="new_est">Estado</h:outputLabel>
+                    <h:selectOneMenu 
+                        value="" 
+                        class="form-control" 
+                        id="new_est">
+                        <f:selectItem itemLabel="Asignado" itemValue="Asignado"></f:selectItem>
+                        <f:selectItem itemLabel="Disponible" itemValue="Disponible"></f:selectItem>
                     </h:selectOneMenu>
+
+
+
+
                     <div>
-                        <h:outputLabel for="validationServer17">Comentarios</h:outputLabel>
-                        <textarea type="text" class="form-control" id="validationServer17" rows="3" placeholder="Indique observaciones del equipo a registrar"></textarea>
+
+
+
+                        <h:outputLabel for="new_com"  >Comentarios</h:outputLabel>
+                        <h:inputTextarea 
+
+                            required="true"
+                            requiredMessage="Indique los omentarios"
+                            value="" 
+                            class="form-control" 
+                            id="new_com" 
+                            html5:placeholder="Comentarios">
+                        </h:inputTextarea>
+                        <h:message style="color: red" for="new_com"></h:message>
+
+
 
                     </div>
 
                 </div>
-                <div class="col-md-6">
-                    <h:outputLabel for="validationServer01">Detalles</h:outputLabel>
-                    <h:inputText  class="form-control" id="validationServer01" placeholder="Ingrese la fecha" />
 
-
-
-                </div>
                 <div class="col-md-6">
 
                 </div>
 
                 <div>
                     <div class="button">
-                        <a class="btn btn-primary" href="#{request.contextPath}/modulos/coordinadors/guardarcoordinador.xhtml">Guardar</a>
+                        <h:commandButton  class="btn btn-primary" value=" Guardar"> </h:commandButton>
+
                         <a class="btn btn-light"  href="#{request.contextPath}/modulos/coordinadors/coordinador.xhtml">Cancelar</a>
                     </div>
                 </div>
