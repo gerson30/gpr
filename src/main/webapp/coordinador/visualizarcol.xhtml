@@ -7,29 +7,18 @@
 
      <ui:composition template="../WEB-INF/template/tema.xhtml">
         
-     
-        
-        <ui:define name="areanotificaciones">
-            <ui:include src="../coordinador/pv/areanotificacionesinv.xhtml"></ui:include>            
+        <ui:define name="areatrabajo">
+            <ui:include src="../coordinador/pv/visualizarcol.xhtml"></ui:include>            
         </ui:define>
          
          <ui:define name="menuvertical" >
              <ui:include src="../coordinador/pv/quitarmenuinvcol.xhtml"></ui:include>
          </ui:define>
          
-         <ui:define name="areatrabajo" >
-             <ui:include src="../coordinador/pv/asignarinv.xhtml"></ui:include>
+         <ui:define name="areanotificaciones" >
+             <ui:include src="../coordinador/pv/areanotificacionescol.xhtml"></ui:include>
          </ui:define>
-         
-         
-         
-        
     </ui:composition>
-         
-         
-         
-        
-    
 
 
 </html>
